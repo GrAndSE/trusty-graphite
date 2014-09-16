@@ -15,7 +15,7 @@ To startup:
 1. `tar xvzf scripts.tgz`
 1. `cd scripts`
 1. `./installGraphite.sh`
-1. `./configureGrahite.sh`
+1. `./configureGraphite.sh`
 1. `./refresh.sh`
 1. Go to [http://192.168.33.10](http://192.168.33.10) in your browser
 1. `cd`

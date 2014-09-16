@@ -35,3 +35,9 @@ sudo chmod -R a+w /opt/graphite/storage
 # create convenience link in ~
 cd
 ln -s /opt/graphite/storage/log/webapp webapp_logs
+
+# Fix wsgi.py
+sudo cp scripts/templates/wsgi.py /opt/graphite/webapp/graphite/wsgi.py
+
+# create database
+sudo PYTHONPATH=/opt/graphite/webapp django-admin.py syncdb --settings=graphite.settings
